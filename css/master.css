@@ -116,18 +116,25 @@ i {
 @media (max-width:768px) {
     .card {
         flex-direction: column;
+        justify-content: center;
         width: 375px;
-        height: 600px;
+        height: 538px;
+
+
     }
 
     .img {
         background-image: url("images/image-product-mobile.jpg");
         background-size: cover;
-        height: 45%;
+        height: 51%;
     }
 
-    C:\Users\Lenovo\Documents\ass\front-mentoer\images .description {
+    .description {
         height: 300px;
+    }
+
+    .card .description p:last-of-type {
+        width: 291.34px;
     }
 }
 
@@ -140,4 +147,6 @@ i {
         height: 100%;
         width: 150%;
     }
+
+
 }
