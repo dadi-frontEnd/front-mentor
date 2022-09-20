@@ -1,0 +1,143 @@
+/*global variables*/
+:root {
+    --primary-color: hsl(158, 36%, 37%);
+    --bacg-color: hsl(30, 38%, 92%);
+    --phr-col: hsl(228, 12%, 48%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bacg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* font-family: 'Montserrat',
+sans-serif;
+
+ont-family: 'Fraunces',
+serif;*/
+.card {
+    display: flex;
+    height: 375px;
+    width: 515px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 200px;
+    height: 306px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+p {
+    color: var(--phr-col);
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 14px;
+}
+
+.card p:first-of-type {
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.card p:last-of-type {
+    line-height: 25px;
+}
+
+h2 {
+    font-family: 'Fraunces',
+        serif;
+    font-weight: 700;
+    font-size: 24px;
+    width: 81%;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 2px 3px 4px grey;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+.pr {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pr span {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Fraunces',
+        serif;
+
+}
+
+del {
+    color: var(--phr-col);
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 14px;
+}
+
+i {
+    padding-right: 10px;
+}
+
+@media (max-width:768px) {
+    .card {
+        flex-direction: column;
+        width: 375px;
+        height: 600px;
+    }
+
+    .img {
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: cover;
+        height: 45%;
+    }
+
+    C:\Users\Lenovo\Documents\ass\front-mentoer\images .description {
+        height: 300px;
+    }
+}
+
+@media (min-width:769px) {
+
+
+    .img {
+        background-image: url("images/image-product-desktop.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 150%;
+    }
+}
